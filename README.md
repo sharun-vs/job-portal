@@ -11,8 +11,11 @@ npm run dev
 ## envs to set in .env file
 
 SERVER_PORT=
+
 MONGO_URI=
+
 MONGO_DB_NAME=
+
 JWT_SECRET=
 
 ## link to postman collection
