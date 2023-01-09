@@ -2,7 +2,7 @@
 
 ## to fireup server
 
-cd job-portal-backend
+cd job-portal
 
 npm i
 
