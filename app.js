@@ -3,6 +3,7 @@ const { port, mongoUri, mongoDbName } = require('./src/common/configs');
 
 const jobsRoutes = require('./src/core/jobs/jobs.router');
 const applicationsRoutes = require('./src/core/applications/applications.router');
+const userRoutes = require('./src/core/users/users.router');
 
 const connectDb = () => {
 	dbConnect(`${mongoUri}/${mongoDbName}`, {
@@ -31,3 +32,4 @@ dbConnection
 expressApp.get('/', (req, res) => res.send('Welcome To Job Portal Backend Service!'));
 expressApp.use('/jobs', jobsRoutes);
 expressApp.use('/applications', applicationsRoutes);
+expressApp.use('/users', userRoutes);
