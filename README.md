@@ -3,7 +3,9 @@
 ## to fireup server
 
 cd job-portal-backend
+
 npm i
+
 npm run dev
 
 ## envs to set in .env file
